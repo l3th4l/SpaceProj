@@ -1,0 +1,21 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Objective.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Fleet/FleetControl.cs" Line="134" Column="27" />
+      <File FileName="Assets/Scripts/Guns.cs" Line="8" Column="5" />
+      <File FileName="Assets/Scripts/Fleet/FleetProperties.cs" Line="15" Column="43" />
+      <File FileName="Assets/Scripts/Fleet/FleetUnit.cs" Line="60" Column="61" />
+      <File FileName="Assets/Scripts/Ship/FleetInventory.cs" Line="38" Column="92" />
+      <File FileName="Assets/Scripts/UIManager.cs" Line="28" Column="5" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="13" Column="3" />
+      <File FileName="Assets/Scripts/Health.cs" Line="15" Column="35" />
+      <File FileName="Assets/Scripts/Objective.cs" Line="26" Column="149" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
