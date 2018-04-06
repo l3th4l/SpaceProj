@@ -1,0 +1,1 @@
+{"PlayerShipsData":[{"ShipName":"Frigate","ShipWeapons":[{"GunName":"Paintball Gun","GunFireRate":10.0,"GunDamage":20.0,"GunRange":200.0},{"GunName":"Laser cannon","GunFireRate":0.0,"GunDamage":0.0,"GunRange":0.0}],"ShipSelectedWeaponIndex":0},{"ShipName":"Carrier","ShipWeapons":[],"ShipSelectedWeaponIndex":0}]}

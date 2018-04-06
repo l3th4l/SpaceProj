@@ -5,7 +5,13 @@ using System.IO;
 
 public class ConfigManager : MonoBehaviour 
 {
-    private WeaponConfig[] PlayerWeaponsData;
+    [SerializeField]
+    PlayerConfig ConfigData;
+
+    [SerializeField]
+    private bool inConfigScene;
+
+    private ShipConfig[] PlayerShipsData;
     private string ConfigFileName = "Player.json";
 
 	void Start () 
@@ -15,7 +21,12 @@ public class ConfigManager : MonoBehaviour
 	
 	void Update () 
     {
-        
+        // Auto save
+        if (inConfigScene)
+        {
+            SaveConfig();
+            LoadConfig();
+        }
 	}
 
     void LoadConfig()
@@ -25,11 +36,23 @@ public class ConfigManager : MonoBehaviour
         if (File.Exists(ConfigPath))
         {
             string ConfigDataAsJSON = File.ReadAllText(ConfigPath);
-            PlayerConfig loadedData = JsonUtility.FromJson<PlayerConfig>(ConfigDataAsJSON);
+            PlayerConfig loadedConfigData = JsonUtility.FromJson<PlayerConfig>(ConfigDataAsJSON);
 
-            PlayerWeaponsData = loadedData.PlayerWeaponsData;
+            PlayerShipsData = loadedConfigData.PlayerShipsData;
         }
         else
-            Debug.LogError(ConfigFileName + " does not exist at " + Application.streamingAssetsPath);
+        {
+            ConfigData = new PlayerConfig();            
+        }
     }
+
+
+    private void SaveConfig()
+    {
+        string ConfigDataAsJSON = JsonUtility.ToJson(ConfigData);
+        string ConfigPath = Path.Combine(Application.streamingAssetsPath, ConfigFileName);
+
+        File.WriteAllText(ConfigPath, ConfigDataAsJSON);
+    }
+
 }

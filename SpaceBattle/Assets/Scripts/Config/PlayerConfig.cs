@@ -5,5 +5,5 @@ using UnityEngine;
 [System.Serializable]
 public class PlayerConfig
 {
-    public WeaponConfig[] PlayerWeaponsData;
+    public ShipConfig[] PlayerShipsData;
 }
