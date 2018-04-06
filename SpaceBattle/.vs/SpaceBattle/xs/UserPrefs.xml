@@ -4,8 +4,10 @@
     <Files>
       <File FileName="Assets/Scripts/Guns.cs" Line="51" Column="6" />
       <File FileName="Assets/Scripts/Data Classes/WeaponConfig.cs" Line="11" Column="27" />
-      <File FileName="Assets/Scripts/Config/PlayerConfig.cs" Line="8" Column="27" />
-      <File FileName="Assets/Scripts/Config/ConfigManager.cs" Line="27" Column="68" />
+      <File FileName="Assets/Scripts/Config/ConfigManager.cs" Line="9" Column="11" />
+      <File FileName="Assets/Scripts/Editor/ConfigEditor.cs" Line="27" Column="6" />
+      <File FileName="Assets/Scripts/Config/PlayerConfig.cs" Line="8" Column="36" />
+      <File FileName="Assets/Scripts/Data Classes/ShipConfig.cs" Line="14" Column="43" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -13,5 +15,6 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp-Editor PreferredExecutionTarget="MonoDevelop.Default" />
   <MultiItemStartupConfigurations />
 </Properties>
